@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E788153-B629-472A-9D20-B853F80B12AC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HackerRank</RootNamespace>
+    <AssemblyName>HackerRank</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Line.cs" />
+    <Compile Include="DataStructures\Arrays\A01.cs" />
+    <Compile Include="DataStructures\Arrays\A02.cs" />
+    <Compile Include="DataStructures\Arrays\A03.cs" />
+    <Compile Include="DataStructures\Arrays\A04InPlace.cs" />
+    <Compile Include="DataStructures\Arrays\A04NewArray.cs" />
+    <Compile Include="DataStructures\Arrays\A05.cs" />
+    <Compile Include="DataStructures\Arrays\Rooter.cs" />
+    <Compile Include="DataStructures\LinkedLists\A02.cs" />
+    <Compile Include="DataStructures\LinkedLists\A03.cs" />
+    <Compile Include="DataStructures\LinkedLists\A04.cs" />
+    <Compile Include="DataStructures\LinkedLists\A05.cs" />
+    <Compile Include="DataStructures\LinkedLists\A06.cs" />
+    <Compile Include="DataStructures\LinkedLists\A07.cs" />
+    <Compile Include="DataStructures\LinkedLists\A08.cs" />
+    <Compile Include="DataStructures\LinkedLists\A09.cs" />
+    <Compile Include="DataStructures\LinkedLists\A10.cs" />
+    <Compile Include="DataStructures\LinkedLists\A11.cs" />
+    <Compile Include="DataStructures\LinkedLists\A12.cs" />
+    <Compile Include="DataStructures\LinkedLists\A13.cs" />
+    <Compile Include="DataStructures\LinkedLists\A14_Recursive.cs" />
+    <Compile Include="DataStructures\LinkedLists\A15_Iterative.cs" />
+    <Compile Include="DataStructures\LinkedLists\A15_Recursive.cs" />
+    <Compile Include="DataStructures\LinkedLists\Rooter.cs" />
+    <Compile Include="DataStructures\Queues\A01.cs" />
+    <Compile Include="DataStructures\Queues\A02.cs" />
+    <Compile Include="DataStructures\Queues\A03.cs" />
+    <Compile Include="DataStructures\Queues\A04.cs" />
+    <Compile Include="DataStructures\Queues\Rooter.cs" />
+    <Compile Include="DataStructures\Stacks\A01.cs" />
+    <Compile Include="DataStructures\Stacks\A02.cs" />
+    <Compile Include="DataStructures\Stacks\A03_Recursive_Better.cs" />
+    <Compile Include="DataStructures\Stacks\A03_Iterative.cs" />
+    <Compile Include="DataStructures\Stacks\A04.cs" />
+    <Compile Include="DataStructures\Stacks\A05.cs" />
+    <Compile Include="DataStructures\Stacks\A06.cs" />
+    <Compile Include="DataStructures\Stacks\A07.cs" />
+    <Compile Include="DataStructures\Stacks\A08.cs" />
+    <Compile Include="DataStructures\Stacks\Rooter.cs" />
+    <Compile Include="DataStructures\Trees\A01.cs" />
+    <Compile Include="DataStructures\Trees\A02.cs" />
+    <Compile Include="DataStructures\Trees\A03.cs" />
+    <Compile Include="DataStructures\Trees\A04.cs" />
+    <Compile Include="DataStructures\Trees\A05.cs" />
+    <Compile Include="DataStructures\Trees\A06.cs" />
+    <Compile Include="DataStructures\Trees\Rooter.cs" />
+    <Compile Include="Common\InputParser.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{393BBD90-36CB-465E-80A5-069A7BD84C3D}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DataStructures\Queues\A02.input.txt" />
+    <EmbeddedResource Include="DataStructures\Queues\A02.output.txt" />
+    <Content Include="IOUtiliy.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

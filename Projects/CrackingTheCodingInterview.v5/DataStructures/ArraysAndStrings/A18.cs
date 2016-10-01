@@ -1,0 +1,24 @@
+﻿using System;
+using Common;
+
+namespace CrackingTheCodingInterview.v5.DataStructures.ArraysAndStrings
+{
+    public class A18: IProgram
+    {
+        public void Run(string[] args)
+        {
+            string input1 = "waterbottle";
+            string input2 = "erbottlewat";
+
+            bool rotated = IsRotated(input1, input2);
+            Console.WriteLine(rotated);
+        }
+
+        private bool IsRotated(string input1, string input2)
+        {
+            string temp = input2 + input2;
+            bool result = temp.Contains(input1);
+            return result;
+        }
+    }
+}

@@ -1,0 +1,91 @@
+package hackerrank.common;
+
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class IOUtiliy {
+	
+	/*
+    Scanner in = new Scanner(System.in);
+    int arr[][] = new int[6][6];
+    for(int arr_i=0; arr_i < 6; arr_i++){
+        for(int arr_j=0; arr_j < 6; arr_j++){
+            arr[arr_i][arr_j] = in.nextInt();
+        }
+    }
+    */
+	
+
+	
+	/*
+    Scanner in = new Scanner(System.in);
+    int seqCount = in.nextInt();
+    int queryCount = in.nextInt();
+    int queries[][] = new int[queryCount][3];
+    for(int i=0; i < queryCount; i++){
+        queries[i][0] = in.nextInt();
+        queries[i][1] = in.nextInt();
+        queries[i][2] = in.nextInt();
+    }
+    */
+    
+
+
+	public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int count = in.nextInt();
+        int[][] commands = new int[count][];
+        
+        for (int i = 0; i < count; i++) {
+			int type = in.nextInt();
+			
+			if (type == 1) {
+				int value = in.nextInt();
+				commands[i] = new int[] {1, value};
+			}
+			
+			if (type == 2) {
+				commands[i] = new int[] {2};
+			}
+			
+			if (type == 3) {
+				commands[i] = new int[] {3};
+			}
+		}
+	}
+	
+	
+	public static int[] toInputArray(InputStream inputStream) {
+        Scanner in = new Scanner(inputStream);
+        int count = in.nextInt();
+        int[] result = new int[count];
+        for (int i = 0; i < count; i++) {
+			int input = in.nextInt();
+			result[i] = input;
+		}
+        
+        in.close();
+        
+        return result;
+	}
+
+	public static int[] toOutputArray(InputStream inputStream) {
+        Scanner in = new Scanner(inputStream);
+        List<Integer> list = new ArrayList<>();
+        while(in.hasNext()) {
+        	int value = in.nextInt();
+        	list.add(value);
+        }
+        
+        int[] result = new int[list.size()];
+        for (int i = 0; i < result.length; i++) {
+			result[i] = list.get(i);
+		}
+        
+        in.close();
+        return result;
+	}
+
+}
