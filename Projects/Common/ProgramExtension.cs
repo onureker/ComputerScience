@@ -7,11 +7,19 @@ namespace Common
 {
     public static class ProgramExtension
     {
-        public static TextReader GetFile(this IProgram extended, string fileName)
+        public static TextReader ReadFile(this IProgram extended, string fileName)
         {
             var type = extended.GetType();
             var stream = type.Assembly.GetManifestResourceStream(type, fileName);
             TextReader textReader = new StreamReader(stream);
+            return textReader;
+        }
+
+        public static TextReader ReadInput(this IProgram extended)
+        {
+            var typeName = extended.GetType().Name;
+            var fileName = $"{typeName}.input.txt";
+            TextReader textReader = ReadFile(extended, fileName);
             return textReader;
         }
 

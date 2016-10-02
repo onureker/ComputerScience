@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common\Line.cs" />
+    <Compile Include="Common\Extensions.cs" />
     <Compile Include="DataStructures\Arrays\A01.cs" />
     <Compile Include="DataStructures\Arrays\A02.cs" />
     <Compile Include="DataStructures\Arrays\A03.cs" />
@@ -90,7 +90,6 @@
     <Compile Include="DataStructures\Trees\A05.cs" />
     <Compile Include="DataStructures\Trees\A06.cs" />
     <Compile Include="DataStructures\Trees\Rooter.cs" />
-    <Compile Include="Common\InputParser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -106,6 +105,7 @@
   <ItemGroup>
     <EmbeddedResource Include="DataStructures\Queues\A02.input.txt" />
     <EmbeddedResource Include="DataStructures\Queues\A02.output.txt" />
+    <EmbeddedResource Include="DataStructures\Queues\A04.input.txt" />
     <Content Include="IOUtiliy.txt" />
   </ItemGroup>
   <ItemGroup />

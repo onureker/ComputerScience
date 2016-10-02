@@ -19,7 +19,7 @@ namespace HackerRank.DataStructures.Queues
         {
             var backingStore = BuildBackingStore();
 
-            //var file = this.GetFile("A02.input.txt");
+            //var file = this.ReadFile("A02.input.txt");
             //InputParser.ParseHeader(file);
             //var inputs = InputParser.MultiLine(file).Select(Line.ToInt);
 
@@ -35,12 +35,12 @@ namespace HackerRank.DataStructures.Queues
 
         public void Test(IDictionary<int, int> backingStore)
         {
-            var inputText = this.GetFile("A02.input.txt");
+            var inputText = this.ReadFile("A02.input.txt");
             var count = inputText.ReadLine().ParseToIntArray()[0];
-            var inputs = InputParser.MultiLine(inputText, count).Select(Line.ToInt).ToList();
+            var inputs = inputText.ReadLines(count).Select(Extensions.ToInt).ToList();
 
-            var outputText = this.GetFile("A02.output.txt");
-            var outputs = InputParser.MultiLine(outputText, count).Select(Line.ToInt).ToList();
+            var outputText = this.ReadFile("A02.output.txt");
+            var outputs = outputText.ReadLines(count).Select(Extensions.ToInt).ToList();
 
 
             //var inputs = ArrayBuilder<int>.New(812849);

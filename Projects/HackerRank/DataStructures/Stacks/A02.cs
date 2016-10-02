@@ -14,7 +14,7 @@ namespace HackerRank.DataStructures.Stacks
         {
             var textReader = Console.In;
             var count = textReader.ReadLine().ParseToIntArray()[0];
-            var inputs = InputParser.MultiLine(Console.In, count);
+            var inputs = textReader.ReadLines(count);
             var outputs = inputs.Select(IsBalanced).Select(b => b ? "YES" : "NO").ToArray();
             outputs.ToList().ForEach(Console.WriteLine);
 
