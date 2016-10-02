@@ -42,6 +42,8 @@
   <ItemGroup>
     <Compile Include="DataStructures\Arrays\ArrayBuilder.cs" />
     <Compile Include="DataStructures\Arrays\ArrayExtensions.cs" />
+    <Compile Include="DataStructures\Graphs\Node.cs" />
+    <Compile Include="DataStructures\Graphs\NodeExtensions.cs" />
     <Compile Include="DataStructures\LinkedLists\Nodes.cs" />
     <Compile Include="DataStructures\LinkedLists\Node.cs" />
     <Compile Include="DataStructures\Trees\Node.cs" />
