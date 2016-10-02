@@ -26,7 +26,7 @@ namespace HackerRank.DataStructures.Trees
             while (queue.size() != 0)
             {
                 Node current = queue.poll();
-                result += current.data + " ";
+                result += current.Data + " ";
 
                 if (current.left != null)
                 {

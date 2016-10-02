@@ -3,11 +3,15 @@
     public class Node
     {
         //For java compability (HackerRank :()
-        public readonly int data;
         public Node left;
         public Node right;
+        public int data;
 
-        public int Data => data;
+        public int Data
+        {
+            get { return data; }
+            set { data = value; }
+        }
 
         public Node Left
         {
@@ -19,6 +23,10 @@
         {
             get { return right; }
             set { right = value; }
+        }
+
+        public Node()
+        {
         }
 
         public Node(int data)
