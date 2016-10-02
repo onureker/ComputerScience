@@ -10,11 +10,11 @@ namespace HackerRank.DataStructures.Trees
     {
         public void Run(string[] args)
         {
-            Node head = Nodes.Parse("3(5(1,4),2(6))");
+            TreeNode head = global::Common.DataStructures.Trees.Trees.Parse("3(5(1,4),2(6))");
             PreOrder(head);
         }
 
-        private void PreOrder(Node current)
+        private void PreOrder(TreeNode current)
         {
             if (current == null)
             {

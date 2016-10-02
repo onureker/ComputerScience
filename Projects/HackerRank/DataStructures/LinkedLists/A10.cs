@@ -4,7 +4,7 @@ using Common.DataStructures.LinkedLists;
 
 namespace HackerRank.DataStructures.LinkedLists
 {
-    //Get Node Value
+    //Get TreeNode Value
     //https://www.hackerrank.com/challenges/get-the-value-of-the-node-at-a-specific-position-from-the-tail
     class A10 : IProgram
     {

@@ -2,9 +2,9 @@
 
 namespace Common.DataStructures.Trees
 {
-    public class Nodes
+    public class Trees
     {
-        public static Node Parse(string input)
+        public static TreeNode Parse(string input)
         {
             if (string.IsNullOrEmpty(input))
             {
@@ -15,25 +15,25 @@ namespace Common.DataStructures.Trees
             int end = input.Length - 1;
             if (start == -1)
             {
-                Node result = new Node(int.Parse(input));
+                TreeNode result = new TreeNode(int.Parse(input));
                 return result;
             }
 
             string value = input.Substring(0, start);
-            Node node = new Node(int.Parse(value));
+            TreeNode treeNode = new TreeNode(int.Parse(value));
             string other = input.Substring(2, end-2);
             int commaPosition = FindCommaPosition(other);
 
             string left = commaPosition == -1 ? other : other.Substring(0, commaPosition);
-            Node leftNode = Parse(left);
+            TreeNode leftTreeNode = Parse(left);
 
             string right = commaPosition == -1 ? null : other.Substring(commaPosition + 1, other.Length - commaPosition - 1);
-            Node rightNode = Parse(right);
+            TreeNode rightTreeNode = Parse(right);
 
-            node.Left = leftNode;
-            node.Right = rightNode;
+            treeNode.Left = leftTreeNode;
+            treeNode.Right = rightTreeNode;
 
-            return node;
+            return treeNode;
         }
 
         private static int FindCommaPosition(string other)

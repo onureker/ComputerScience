@@ -52,6 +52,7 @@
     <Compile Include="DataStructures\ArraysAndStrings\A17.cs" />
     <Compile Include="DataStructures\ArraysAndStrings\A18.cs" />
     <Compile Include="DataStructures\ArraysAndStrings\ArrayBuilder.cs" />
+    <Compile Include="DataStructures\ArraysAndStrings\Rooter.cs" />
     <Compile Include="DataStructures\LinkedLists\A21.cs" />
     <Compile Include="DataStructures\LinkedLists\A22.cs" />
     <Compile Include="DataStructures\LinkedLists\A23.cs" />
@@ -61,6 +62,7 @@
     <Compile Include="DataStructures\LinkedLists\A26.cs" />
     <Compile Include="DataStructures\LinkedLists\A27.cs" />
     <Compile Include="DataStructures\LinkedLists\A27.Iteriative.cs" />
+    <Compile Include="DataStructures\LinkedLists\Rooter.cs" />
     <Compile Include="DataStructures\StacksAndQueues\A31.cs" />
     <Compile Include="DataStructures\StacksAndQueues\A32.cs" />
     <Compile Include="DataStructures\StacksAndQueues\A33.cs" />
@@ -70,6 +72,9 @@
     <Compile Include="DataStructures\StacksAndQueues\A36.cs" />
     <Compile Include="DataStructures\StacksAndQueues\A3.cs" />
     <Compile Include="DataStructures\StacksAndQueues\A37.cs" />
+    <Compile Include="DataStructures\StacksAndQueues\Rooter.cs" />
+    <Compile Include="DataStructures\TreesAndGraphs\A01.cs" />
+    <Compile Include="DataStructures\TreesAndGraphs\Rooter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

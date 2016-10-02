@@ -3,7 +3,7 @@ using Common.DataStructures.LinkedLists;
 
 namespace HackerRank.DataStructures.LinkedLists
 {
-    //Inserting a Node Into a Sorted Doubly Linked List
+    //Inserting a TreeNode Into a Sorted Doubly Linked List
     //https://www.hackerrank.com/challenges/insert-a-node-into-a-sorted-doubly-linked-list
     // ReSharper disable once InconsistentNaming
     class A14_Recursive: IProgram
