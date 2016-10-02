@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Common;
+using Common.DataStructures;
 using Common.DataStructures.Graphs;
 
 namespace CrackingTheCodingInterview.v5.DataStructures.TreesAndGraphs

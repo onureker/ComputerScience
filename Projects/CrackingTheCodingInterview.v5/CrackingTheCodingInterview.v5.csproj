@@ -75,6 +75,7 @@
     <Compile Include="DataStructures\StacksAndQueues\Rooter.cs" />
     <Compile Include="DataStructures\TreesAndGraphs\A01.cs" />
     <Compile Include="DataStructures\TreesAndGraphs\A02.cs" />
+    <Compile Include="DataStructures\TreesAndGraphs\A03.cs" />
     <Compile Include="DataStructures\TreesAndGraphs\Rooter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

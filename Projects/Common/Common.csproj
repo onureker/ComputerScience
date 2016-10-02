@@ -46,7 +46,9 @@
     <Compile Include="DataStructures\Graphs\NodeExtensions.cs" />
     <Compile Include="DataStructures\LinkedLists\Nodes.cs" />
     <Compile Include="DataStructures\LinkedLists\Node.cs" />
+    <Compile Include="DataStructures\ObjectExtensions.cs" />
     <Compile Include="DataStructures\Trees\Node.cs" />
+    <Compile Include="DataStructures\Trees\NodeExtensions.cs" />
     <Compile Include="DataStructures\Trees\TreeBuilder.cs" />
     <Compile Include="IProgram.cs" />
     <Compile Include="ProgramExtension.cs" />
