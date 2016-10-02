@@ -11,7 +11,7 @@ namespace CrackingTheCodingInterview.v5.DataStructures.LinkedLists
             Node<int> input = Nodes.Build(3, 1, 4, 3, 7, 1, 9, 10);
             input.Dump();
 
-            //TreeNode<int> output1 = RemoveDuplicate(input);
+            //Node<int> output1 = RemoveDuplicate(input);
             //output1.Dump();
 
             Node<int> output2 = RemoveDuplicateFollowUp(input);

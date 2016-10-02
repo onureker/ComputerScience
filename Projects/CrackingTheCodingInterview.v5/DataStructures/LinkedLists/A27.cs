@@ -10,7 +10,7 @@ namespace CrackingTheCodingInterview.v5.DataStructures.LinkedLists
         public void Run(string[] args)
         {
             var head = Nodes.Build(1, 2, 3, 0, 3, 2, 1);
-            //var head = Trees.Build(1, 2, 3, 3, 2, 1);
+            //var head = TreeBuilder.Build(1, 2, 3, 3, 2, 1);
             //bool palindrome = IterativeAnswer(head);
             bool palindrome = RecursiveAnswer(head);
             Console.WriteLine(palindrome);

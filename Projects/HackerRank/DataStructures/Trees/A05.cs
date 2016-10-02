@@ -10,18 +10,18 @@ namespace HackerRank.DataStructures.Trees
     {
         public void Run(string[] args)
         {
-            TreeNode root = global::Common.DataStructures.Trees.Trees.Parse("3(5(1(,9),4),2(6,7(8)))");
+            Node root = global::Common.DataStructures.Trees.TreeBuilder.Parse("3(5(1(,9),4),2(6,7(8)))");
             TopView(root);
         }
 
-        private void TopView(TreeNode root)
+        private void TopView(Node root)
         {
             TopViewLeft(root.Left);
             Console.Write(root.Data + " ");
             TopViewRight(root.Right);
         }
 
-        private void TopViewLeft(TreeNode root)
+        private void TopViewLeft(Node root)
         {
             if (root == null)
             {
@@ -32,7 +32,7 @@ namespace HackerRank.DataStructures.Trees
             Console.Write(root.Data + " ");
         }
 
-        private void TopViewRight(TreeNode root)
+        private void TopViewRight(Node root)
         {
             if (root == null)
             {

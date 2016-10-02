@@ -13,10 +13,11 @@ namespace HackerRank
         {
             //var temp = nameof(DataStructures.Arrays);
             //IProgram rooter = new HackerRank.DataStructures.Arrays.Rooter();
-            //IProgram rooter = new HackerRank.DataStructures.Trees.Rooter();
             //IProgram rooter = new HackerRank.DataStructures.Stacks.Rooter();
-            IProgram rooter = new HackerRank.DataStructures.Queues.Rooter();
+            //IProgram rooter = new HackerRank.DataStructures.Queues.Rooter();
             //IProgram rooter = new HackerRank.DataStructures.LinkedLists.Rooter();
+
+            IProgram rooter = new DataStructures.Trees.Rooter();
             rooter.Run(args);
         }
     }

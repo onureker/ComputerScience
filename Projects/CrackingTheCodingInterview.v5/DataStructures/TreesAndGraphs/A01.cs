@@ -15,13 +15,13 @@ namespace CrackingTheCodingInterview.v5.DataStructures.TreesAndGraphs
     {
         public void Run(string[] args)
         {
-            var root = Trees.Parse("3(4(2), 1)");
+            var root = TreeBuilder.Parse("3(4(2), 1)");
             int height = Height(root);
             string result = height != -1 ? "BALANCED" : "UNBALANCED";
             Console.WriteLine(result);
         }
 
-        private int Height(TreeNode root)
+        private int Height(Node root)
         {
             if (root == null)
             {

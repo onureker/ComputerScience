@@ -44,11 +44,12 @@
     <Compile Include="DataStructures\Arrays\ArrayExtensions.cs" />
     <Compile Include="DataStructures\LinkedLists\Nodes.cs" />
     <Compile Include="DataStructures\LinkedLists\Node.cs" />
-    <Compile Include="DataStructures\Trees\TreeNode.cs" />
-    <Compile Include="DataStructures\Trees\Trees.cs" />
+    <Compile Include="DataStructures\Trees\Node.cs" />
+    <Compile Include="DataStructures\Trees\TreeBuilder.cs" />
     <Compile Include="IProgram.cs" />
     <Compile Include="ProgramExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\Java\QueueExtensions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
