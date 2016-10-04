@@ -4,6 +4,9 @@ using Common.DataStructures.LinkedLists;
 
 namespace CrackingTheCodingInterview.v5.DataStructures.LinkedLists
 {
+    //Write code to remove duplicates from an unsorted linked list.
+    //FOLLOW UP
+    //How would you solve this problem if a temporary buffer is not allowed?
     public class A21: IProgram
     {
         public void Run(string[] args)

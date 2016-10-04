@@ -4,6 +4,7 @@ using Common.DataStructures.LinkedLists;
 
 namespace CrackingTheCodingInterview.v5.DataStructures.LinkedLists
 {
+    //Implement an algorithm to find the kth to last element of a singly linked list.
     public class A22: IProgram
     {
         public void Run(string[] args)

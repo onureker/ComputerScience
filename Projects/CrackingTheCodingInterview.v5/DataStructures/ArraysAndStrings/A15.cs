@@ -5,6 +5,9 @@ using Common;
 
 namespace CrackingTheCodingInterview.v5.DataStructures.ArraysAndStrings
 {
+    //Implement a method to perform basic string compression using the counts of repeated characters.For example, 
+    //the string aabcccccaaa would become a2blc5a3.
+    //If the "compressed"string would not become smaller than the original string, your method should return the original string
     public class A15: IProgram
     {
         private class Entry

@@ -6,6 +6,8 @@ namespace CrackingTheCodingInterview.v5.DataStructures.ArraysAndStrings
 {
     public class A11 : IProgram
     {
+        //Implement an algorithm to determine if a string has all unique characters.What
+        //if you cannot use additional data structures?
         public void Run(string[] args)
         {
             string input = "AZOnurEker".ToUpper();

@@ -5,8 +5,7 @@ namespace CrackingTheCodingInterview.v5.DataStructures.LinkedLists
 {
     public class A24: IProgram
     {
-        // Write code to partition a linked list around a value x, 
-        // such that all nodes less than x come before all nodes greater than or equal to x
+        //Write code to partition a linked list around avalue x, such that all nodes less than x come before all nodes greater than or equal to x.
         public void Run(string[] args)
         {
             Node<int> input = Nodes.Build(3, 1, 4, 3, 7, 1, 9, 10);

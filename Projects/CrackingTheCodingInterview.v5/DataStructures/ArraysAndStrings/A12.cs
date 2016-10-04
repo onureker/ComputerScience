@@ -3,6 +3,7 @@ using Common;
 
 namespace CrackingTheCodingInterview.v5.DataStructures.ArraysAndStrings
 {
+    //Implement a function void reverse(char* str) in C or C++ which reverses a nullterminated string.
     public class A12: IProgram
     {
         public void Run(string[] args)

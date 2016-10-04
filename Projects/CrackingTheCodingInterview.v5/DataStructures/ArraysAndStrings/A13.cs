@@ -6,6 +6,7 @@ namespace CrackingTheCodingInterview.v5.DataStructures.ArraysAndStrings
 {
     public class A13: IProgram
     {
+        //Given two strings, write a method to decide if one is a permutation of the other
         public void Run(string[] args)
         {
             string input1 = "OnurEker".ToUpper();

@@ -3,6 +3,8 @@ using Common.DataStructures.Arrays;
 
 namespace CrackingTheCodingInterview.v5.DataStructures.ArraysAndStrings
 {
+    //Given an image represented by an NxNmatrix, where each pixel in the image is 4 bytes,
+    //write a method to rotate the image by 90 degrees.Can you do this in place?
     public class A16: IProgram
     {
         public void Run(string[] args)

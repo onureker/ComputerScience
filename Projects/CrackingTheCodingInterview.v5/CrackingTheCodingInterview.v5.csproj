@@ -51,7 +51,6 @@
     <Compile Include="DataStructures\ArraysAndStrings\A16.cs" />
     <Compile Include="DataStructures\ArraysAndStrings\A17.cs" />
     <Compile Include="DataStructures\ArraysAndStrings\A18.cs" />
-    <Compile Include="DataStructures\ArraysAndStrings\ArrayBuilder.cs" />
     <Compile Include="DataStructures\ArraysAndStrings\Rooter.cs" />
     <Compile Include="DataStructures\LinkedLists\A21.cs" />
     <Compile Include="DataStructures\LinkedLists\A22.cs" />
