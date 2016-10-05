@@ -5,6 +5,15 @@ using Common;
 
 namespace CrackingTheCodingInterview.v5.DataStructures.StacksAndQueues
 {
+
+    //In the classic problem of the Towers of Hanoi, you have 3 towers and Ndisks of
+    //different sizes which can slide onto any tower.The puzzle starts with diskssorted
+    //in ascending order of size from top to bottom (i.e., each disk sits on top of an
+    //even larger one). You have the following constraints:
+    //(1) Only one disk can be moved at a time.
+    //(2) A disk is slid off the top of one tower onto the next tower.
+    //(3) A disk can only be placed on top of a larger disk.
+    //Write a program to move the disksfrom the first tower to the last using stacks
     public class A34: IProgram
     {
         private readonly IDictionary<int, Stack<int>> towers;

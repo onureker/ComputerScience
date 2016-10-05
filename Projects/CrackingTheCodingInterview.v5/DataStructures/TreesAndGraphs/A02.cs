@@ -9,6 +9,7 @@ using Common.DataStructures.Graphs;
 
 namespace CrackingTheCodingInterview.v5.DataStructures.TreesAndGraphs
 {
+    //Given a directed graph, design an algorithm to find out whether there is a route between two nodes.
     public class A02: IProgram
     {
         public void Run(string[] args)

@@ -6,6 +6,7 @@ namespace CrackingTheCodingInterview.v5.DataStructures.StacksAndQueues
 {
     public class A31: IProgram
     {
+        //Describe how you could use a singlearray to implement three stack
         //TODO: Flxible size olarak nasıl yapılır?
         public void Run(string[] args)
         {

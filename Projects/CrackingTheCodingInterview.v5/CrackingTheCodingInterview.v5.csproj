@@ -69,7 +69,6 @@
     <Compile Include="DataStructures\StacksAndQueues\A34.cs" />
     <Compile Include="DataStructures\StacksAndQueues\A35.cs" />
     <Compile Include="DataStructures\StacksAndQueues\A36.cs" />
-    <Compile Include="DataStructures\StacksAndQueues\A3.cs" />
     <Compile Include="DataStructures\StacksAndQueues\A37.cs" />
     <Compile Include="DataStructures\StacksAndQueues\Rooter.cs" />
     <Compile Include="DataStructures\TreesAndGraphs\A01.cs" />

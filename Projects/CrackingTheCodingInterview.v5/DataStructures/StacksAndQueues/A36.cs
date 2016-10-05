@@ -3,6 +3,10 @@ using Common;
 
 namespace CrackingTheCodingInterview.v5.DataStructures.StacksAndQueues
 {
+    //Write a program to sort a stack in ascending order (with biggest items on top).
+    //You may use at most one additional stack to hold items, but you may not copy
+    //the elements into any other data structure(suchasan array).The stack supports
+    //the following operations: push, pop, peek, and isEmpty.
     public class A36: IProgram
     {
         public void Run(string[] args)

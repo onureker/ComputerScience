@@ -4,6 +4,8 @@ using Common;
 
 namespace CrackingTheCodingInterview.v5.DataStructures.StacksAndQueues
 {
+    //FOLLOW UP
+    //Implement afunction popAt(int index) which performs a pop operation on a specific sub-stack.
     public class A33FollowUp: IProgram
     {
         public class SetOfStack

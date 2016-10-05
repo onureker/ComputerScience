@@ -10,6 +10,8 @@ using Common.DataStructures.Trees;
 
 namespace CrackingTheCodingInterview.v5.DataStructures.TreesAndGraphs
 {
+    //Given a sorted (increasingorder) array with unique integer elements, 
+    //write an algorithm to createa binary search tree with minimal height.
     class A03: IProgram
     {
         public void Run(string[] args)

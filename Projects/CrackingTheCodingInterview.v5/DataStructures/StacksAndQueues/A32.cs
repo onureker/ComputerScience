@@ -6,6 +6,9 @@ namespace CrackingTheCodingInterview.v5.DataStructures.StacksAndQueues
 {
     public class A32: IProgram
     {
+        //How would you design a stack which, in addition to push and pop, 
+        //also has a function min which returns the minimum element?
+        //Push, pop and min should all operatein O(1) time
         public class CustomStack
         {
             private readonly Stack<int> values;

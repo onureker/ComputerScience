@@ -3,6 +3,7 @@ using Common;
 
 namespace CrackingTheCodingInterview.v5.DataStructures.StacksAndQueues
 {
+    //Implement a MyQueue class which implements a queue using two stacks.
     public class A35: IProgram
     {
         public class MyQueue
