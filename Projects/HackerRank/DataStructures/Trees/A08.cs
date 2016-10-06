@@ -10,7 +10,9 @@ using Common.Utility.Java;
 
 namespace HackerRank.DataStructures.Trees
 {
-    class A08: IProgram
+    //Tree: Huffman Decoding
+    //https://www.hackerrank.com/challenges/tree-huffman-decoding
+    class A08 : IProgram
     {
         class Node
         {

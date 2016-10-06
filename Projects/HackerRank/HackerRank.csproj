@@ -92,6 +92,7 @@
     <Compile Include="DataStructures\Trees\A06.cs" />
     <Compile Include="DataStructures\Trees\A07.cs" />
     <Compile Include="DataStructures\Trees\A08.cs" />
+    <Compile Include="DataStructures\Trees\A09.cs" />
     <Compile Include="DataStructures\Trees\Rooter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

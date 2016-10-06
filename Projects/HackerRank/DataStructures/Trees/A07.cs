@@ -8,7 +8,9 @@ using Common.DataStructures.Trees;
 
 namespace HackerRank.DataStructures.Trees
 {
-    class A07: IProgram
+    //Binary Search Tree : Insertion
+    //https://www.hackerrank.com/challenges/binary-search-tree-insertion
+    class A07 : IProgram
     {
         public void Run(string[] args)
         {
