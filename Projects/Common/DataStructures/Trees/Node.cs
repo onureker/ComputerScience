@@ -1,6 +1,6 @@
 ﻿namespace Common.DataStructures.Trees
 {
-    public class Node
+    public class Node: IDataStructure
     {
         //For java compability (HackerRank :()
         public Node left;

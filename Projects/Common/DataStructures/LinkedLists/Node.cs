@@ -3,7 +3,7 @@
 namespace Common.DataStructures.LinkedLists
 {
     [DebuggerDisplay("{Data}")]
-    public class Node<T>
+    public class Node<T>: IDataStructure
     {
         public Node<T> Previous { get; set; }
         public Node<T> Next { get; set; }

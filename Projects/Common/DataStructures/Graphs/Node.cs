@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Common.DataStructures.Graphs
 {
-    public class Node
+    public class Node: IDataStructure
     {
         public Node()
         {

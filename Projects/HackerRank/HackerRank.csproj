@@ -109,7 +109,6 @@
   <ItemGroup>
     <EmbeddedResource Include="DataStructures\Queues\A02.input.txt" />
     <EmbeddedResource Include="DataStructures\Queues\A02.output.txt" />
-    <Content Include="IOUtiliy.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
