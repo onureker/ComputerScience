@@ -25,26 +25,42 @@ namespace Common.DataStructures.Trees
                 var currentHeight = current.GetProperty<int>();
                 heightedNodes[currentHeight].Add(current);
 
-                if (current.Left != null)
+                var childHeight = currentHeight - 1;
+                if (childHeight == -1)
                 {
-                    current.Left.SetProperty(currentHeight - 1);
-                    queue.Enqueue(current.Left);
+                    continue;
                 }
 
+                var left = current.Left ?? Node.Null;
+                left.SetProperty(childHeight);
+                queue.Enqueue(left);
+
+                var right = current.Right ?? Node.Null;
+                right.SetProperty(childHeight);
+                queue.Enqueue(right);
+
+                /*
                 if (current.Right != null)
                 {
                     current.Right.SetProperty(currentHeight - 1);
                     queue.Enqueue(current.Right);
                 }
+                */
             }
+
+            const int nodeValueLength = 1;
 
             foreach (var pair in heightedNodes.OrderByDescending(pair => pair.Key))
             {
                 var currentHeight = pair.Key;
-                var spaceCount = (int)Math.Pow(2, currentHeight);
-                string space = new string(' ', spaceCount);
-                var values = pair.Value.Select(node => node.data.ToString());
-                var text = space + string.Join(space, values);
+
+                var leftCount = (int)Math.Pow(2, currentHeight+1) - 2;
+                string leftPad = new string(' ', leftCount);
+
+                var spaceCount = (int)Math.Pow(2, currentHeight+2) - 2;
+                string separator = new string(' ', spaceCount);
+                var values = pair.Value.Select(node => node.data == 0 ? " " : node.data.ToString());
+                var text = leftPad + string.Join(separator, values);
                 Console.WriteLine(text);
             }
         }
@@ -60,6 +76,18 @@ namespace Common.DataStructures.Trees
             var rightHeight = extended.Right.GetHeight();
             var result = Math.Max(leftHeight, rightHeight) + 1;
             return result;
+        }
+
+        public static void InOrder(this Node extended, Action<Node> action)
+        {
+            if (extended == null)
+            {
+                return;
+            }
+
+            extended.Left.InOrder(action);
+            action(extended);
+            extended.Right.InOrder(action);
         }
     }
 }

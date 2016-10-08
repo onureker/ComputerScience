@@ -2,6 +2,8 @@
 {
     public class Node: IDataStructure
     {
+        public static Node Null = new Node(0);
+
         //For java compability (HackerRank :()
         public Node left;
         public Node right;
