@@ -3,7 +3,7 @@ using System.Diagnostics;
 
 namespace Common.DataStructures.LinkedLists
 {
-    public static class Nodes
+    public static class LinkedLists
     {
         public static Node<T> Build<T>(params T[] values)
         {

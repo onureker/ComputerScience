@@ -12,8 +12,8 @@ namespace CrackingTheCodingInterview.v5.DataStructures.LinkedLists
     {
         public void Run(string[] args)
         {
-            var first = Nodes.Build(1, 2, 3, 4);
-            var second = Nodes.Build(5, 6, 7);
+            var first = Common.DataStructures.LinkedLists.LinkedLists.Build(1, 2, 3, 4);
+            var second = Common.DataStructures.LinkedLists.LinkedLists.Build(5, 6, 7);
             var firstLength = first.Length();
             var secondLength = second.Length();
             int maxLength = firstLength > secondLength ? firstLength : secondLength;
@@ -44,7 +44,7 @@ namespace CrackingTheCodingInterview.v5.DataStructures.LinkedLists
             }
             
             var result = first.Data + second.Data + carry.GetValueOrDefault();
-            var node = Nodes.Create(result);
+            var node = Common.DataStructures.LinkedLists.LinkedLists.Create(result);
             node.Next = child;
             return node;
         }

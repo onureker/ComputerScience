@@ -9,7 +9,7 @@ namespace CrackingTheCodingInterview.v5.DataStructures.LinkedLists
     {
         public void Run(string[] args)
         {
-            Node<int> input = Nodes.Build(3, 1, 4, 3, 7, 1, 9, 10);
+            Node<int> input = Common.DataStructures.LinkedLists.LinkedLists.Build(3, 1, 4, 3, 7, 1, 9, 10);
 
             Node<int> output = FindKthLastElement(input, 4);
             Console.WriteLine(output);

@@ -11,7 +11,7 @@ namespace CrackingTheCodingInterview.v5.DataStructures.LinkedLists
     {
         public void Run(string[] args)
         {
-            Node<string> input = Nodes.Build("a", "b", "c", "d", "e");
+            Node<string> input = Common.DataStructures.LinkedLists.LinkedLists.Build("a", "b", "c", "d", "e");
             Node<string> nodeToBeDeleted = input.Lookup("c");
 
             DeleteNode(nodeToBeDeleted);

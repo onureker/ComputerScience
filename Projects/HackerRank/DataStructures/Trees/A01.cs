@@ -10,7 +10,7 @@ namespace HackerRank.DataStructures.Trees
     {
         public void Run(string[] args)
         {
-            Node head = global::Common.DataStructures.Trees.TreeBuilder.Parse("3(5(1,4),2(6))");
+            Node head = global::Common.DataStructures.Trees.Trees.Parse("3(5(1,4),2(6))");
             PreOrder(head);
         }
 

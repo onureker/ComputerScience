@@ -14,8 +14,8 @@ namespace HackerRank.DataStructures.LinkedLists
     {
         public void Run(string[] args)
         {
-            //Node head = TreeBuilder.build(1, 1, 3, 3, 5, 6);
-            var head = Nodes.Build(1, 1, 1, 1, 1, 1, 1);
+            //Node head = Trees.build(1, 1, 3, 3, 5, 6);
+            var head = global::Common.DataStructures.LinkedLists.LinkedLists.Build(1, 1, 1, 1, 1, 1, 1);
             var result = RemoveDuplicates(head);
             result.Dump();
         }

@@ -7,14 +7,13 @@ namespace Common.DataStructures.Arrays
     {
         public static void Dump<T>(this T[] extended)
         {
-            var strings = extended.Select(x => x.ToString());
-            var text = string.Join(" ", strings);
+            var text = string.Join(" ", extended);
             Console.WriteLine(text);
         }
 
         public static void Dump<T>(this T[][] array)
         {
-            array.ToList().ForEach(cells => Console.WriteLine(string.Join(" ", cells)));
+            array.ToList().ForEach(cells => cells.Dump());
         }
 
     }

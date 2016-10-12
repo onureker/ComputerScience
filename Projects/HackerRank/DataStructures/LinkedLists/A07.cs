@@ -9,7 +9,7 @@ namespace HackerRank.DataStructures.LinkedLists
     {
         public void Run(string[] args)
         {
-            var head = Nodes.Build(3, 1, 4);
+            var head = global::Common.DataStructures.LinkedLists.LinkedLists.Build(3, 1, 4);
             var result = Reverse(head);
             result.Dump();
         }

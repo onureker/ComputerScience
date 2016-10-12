@@ -10,7 +10,7 @@ namespace HackerRank.DataStructures.LinkedLists
     {
         public void Run(string[] args)
         {
-            var head = Nodes.Build(2, 4, 6);
+            var head = global::Common.DataStructures.LinkedLists.LinkedLists.Build(2, 4, 6);
             head.Dump();
             int data = 5;
             var result = SortedInsert(head, data);
@@ -23,7 +23,7 @@ namespace HackerRank.DataStructures.LinkedLists
         {
             if (head == null)
             {
-                return Nodes.Build(data);
+                return global::Common.DataStructures.LinkedLists.LinkedLists.Build(data);
             }
 
             if (data > head.Data)
@@ -34,7 +34,7 @@ namespace HackerRank.DataStructures.LinkedLists
                 return head;
             }
 
-            var n = Nodes.Build(data);
+            var n = global::Common.DataStructures.LinkedLists.LinkedLists.Build(data);
             n.Next = head;
             head.Previous = n;
             return n;

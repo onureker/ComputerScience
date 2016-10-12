@@ -9,14 +9,14 @@ namespace HackerRank.DataStructures.LinkedLists
     {
         public void Run(string[] args)
         {
-            var head = Nodes.Build(1);
+            var head = global::Common.DataStructures.LinkedLists.LinkedLists.Build(1);
             var result = Insert(head, 2);
             result.Dump();
         }
 
         private Node<int> Insert(Node<int> head, int x)
         {
-            var node = Nodes.Create(x);
+            var node = global::Common.DataStructures.LinkedLists.LinkedLists.Create(x);
             node.Next = head;
             return node;
         }

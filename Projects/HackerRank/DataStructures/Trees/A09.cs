@@ -14,7 +14,7 @@ namespace HackerRank.DataStructures.Trees
     {
         public void Run(string[] args)
         {
-            Node root = TreeBuilder.Parse("4(2(1,3),7(6))");
+            Node root = global::Common.DataStructures.Trees.Trees.Parse("4(2(1,3),7(6))");
             var result = LowestCommonAncestor(root, 1, 3);
             result.Dump();
         }

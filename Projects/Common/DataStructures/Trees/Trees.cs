@@ -2,7 +2,7 @@
 
 namespace Common.DataStructures.Trees
 {
-    public class TreeBuilder
+    public class Trees
     {
         public static Node Parse(string input)
         {

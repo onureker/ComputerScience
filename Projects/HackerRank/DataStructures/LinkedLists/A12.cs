@@ -10,7 +10,7 @@ namespace HackerRank.DataStructures.LinkedLists
     {
         public void Run(string[] args)
         {
-            var head = Nodes.Build(1, 2, 3, 4);
+            var head = global::Common.DataStructures.LinkedLists.LinkedLists.Build(1, 2, 3, 4);
             var node2 = head.Lookup(2);
             var node3 = head.Lookup(3);
             node3.Next = node2;

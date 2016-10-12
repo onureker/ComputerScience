@@ -15,8 +15,8 @@ namespace CrackingTheCodingInterview.v5.DataStructures.LinkedLists
     {
         public void Run(string[] args)
         {
-            var first = Nodes.Build(7, 1, 6);
-            var second = Nodes.Build(5, 9, 2);
+            var first = Common.DataStructures.LinkedLists.LinkedLists.Build(7, 1, 6);
+            var second = Common.DataStructures.LinkedLists.LinkedLists.Build(5, 9, 2);
             var result = Sum(first, second);
             result.Dump();
         }
@@ -35,7 +35,7 @@ namespace CrackingTheCodingInterview.v5.DataStructures.LinkedLists
                 var valueB = currentB?.Data ?? 0;
 
                 var sum = valueA + valueB + carry;
-                var current = Nodes.Create(sum % 10);
+                var current = Common.DataStructures.LinkedLists.LinkedLists.Create(sum % 10);
                 carry = sum/10;
                 if (head == null)
                 {
@@ -54,7 +54,7 @@ namespace CrackingTheCodingInterview.v5.DataStructures.LinkedLists
 
             if (carry != 0)
             {
-                tail.Next = Nodes.Create(carry);
+                tail.Next = Common.DataStructures.LinkedLists.LinkedLists.Create(carry);
             }
 
             return head;

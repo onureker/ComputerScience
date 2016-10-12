@@ -12,7 +12,7 @@ namespace CrackingTheCodingInterview.v5.DataStructures.TreesAndGraphs
     {
         public void Run(string[] args)
         {
-            var root = TreeBuilder.Parse("5(1(3,4),2(7,8))");
+            var root = Trees.Parse("5(1(3,4),2(7,8))");
             IDictionary<int, Node<int>> lists = BuildLinkLists(root);
             lists.ToList().ForEach(pair => pair.Value.Dump());
         }
@@ -31,7 +31,7 @@ namespace CrackingTheCodingInterview.v5.DataStructures.TreesAndGraphs
                 return;
             }
 
-            Node<int> linkedListNode = Nodes.Build(root.Data);
+            Node<int> linkedListNode = Common.DataStructures.LinkedLists.LinkedLists.Build(root.Data);
             if (!result.ContainsKey(depth))
             {
                 result.Add(depth, linkedListNode);

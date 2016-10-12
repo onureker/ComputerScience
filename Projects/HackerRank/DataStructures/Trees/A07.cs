@@ -14,7 +14,7 @@ namespace HackerRank.DataStructures.Trees
     {
         public void Run(string[] args)
         {
-            var root = TreeBuilder.Parse("4(2(1,3),7)");
+            var root = global::Common.DataStructures.Trees.Trees.Parse("4(2(1,3),7)");
             int value = 6;
             var result = Insert(root, value);
         }

@@ -14,8 +14,8 @@ namespace HackerRank.DataStructures.LinkedLists
     {
         public void Run(string[] args)
         {
-            var headA = Nodes.Build(1, 3, 5, 6);
-            var headB = Nodes.Build(2, 4, 7);
+            var headA = global::Common.DataStructures.LinkedLists.LinkedLists.Build(1, 3, 5, 6);
+            var headB = global::Common.DataStructures.LinkedLists.LinkedLists.Build(2, 4, 7);
             var result = MergeLists(headA, headB);
             result.Dump();
         }

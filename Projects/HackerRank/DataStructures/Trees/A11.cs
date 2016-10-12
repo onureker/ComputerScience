@@ -14,7 +14,7 @@ namespace HackerRank.DataStructures.Trees
     {
         public void Run(string[] args)
         {
-            var root = TreeBuilder.Parse("3(5(1,4),2(6))");
+            var root = global::Common.DataStructures.Trees.Trees.Parse("3(5(1,4),2(6))");
             var result = CheckBST(root, int.MinValue, int.MaxValue);
             Console.WriteLine(result);
         }

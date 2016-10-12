@@ -8,7 +8,7 @@ namespace CrackingTheCodingInterview.v5.DataStructures.LinkedLists
         //Write code to partition a linked list around avalue x, such that all nodes less than x come before all nodes greater than or equal to x.
         public void Run(string[] args)
         {
-            Node<int> input = Nodes.Build(3, 1, 4, 3, 7, 1, 9, 10);
+            Node<int> input = Common.DataStructures.LinkedLists.LinkedLists.Build(3, 1, 4, 3, 7, 1, 9, 10);
             //PartitionBy1(input, 4).Dump();
             PartitionBy2(input, 4).Dump();
         }

@@ -16,7 +16,7 @@ namespace HackerRank.DataStructures.LinkedLists
         //TODO: Tamamla Sanırm doubly linked list bozuk
         public void Run(string[] args)
         {
-            var head = Nodes.Build(2, 4, 6, 8);
+            var head = global::Common.DataStructures.LinkedLists.LinkedLists.Build(2, 4, 6, 8);
             var result = Reverse(head);
             result.Dump();
         }

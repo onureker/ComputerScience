@@ -9,7 +9,7 @@ using HackerRank.Common;
 
 namespace HackerRank.DataStructures.Trees
 {
-    //Swap Nodes [Algo]
+    //Swap LinkedLists [Algo]
     //https://www.hackerrank.com/challenges/swap-nodes-algo
     public class A10: IProgram
     {
@@ -30,9 +30,9 @@ namespace HackerRank.DataStructures.Trees
             }
 
             /*
-            //var root = TreeBuilder.Parse("1(2,3)");
-            //var root = TreeBuilder.Parse("1(2(,4),3(,5))");
-            //var root = TreeBuilder.Parse("1(2(4(6(,9))),3(5(7,8(10,11))))");
+            //var root = Trees.Parse("1(2,3)");
+            //var root = Trees.Parse("1(2(,4),3(,5))");
+            //var root = Trees.Parse("1(2(4(6(,9))),3(5(7,8(10,11))))");
             root = Swap(root, 2);
             root.InOrder(x => Console.Write(x.Data + " "));
             Console.WriteLine();

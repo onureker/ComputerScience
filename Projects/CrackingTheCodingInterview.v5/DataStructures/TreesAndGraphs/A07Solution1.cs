@@ -11,7 +11,7 @@ namespace CrackingTheCodingInterview.v5.DataStructures.TreesAndGraphs
     {
         public void Run(string[] args)
         {
-            var root = TreeBuilder.Parse("3(1,5(,8))");
+            var root = Trees.Parse("3(1,5(,8))");
 
             var node3 = root.left;
             var node8 = root.right.right;

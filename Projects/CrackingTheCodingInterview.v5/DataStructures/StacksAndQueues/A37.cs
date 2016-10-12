@@ -58,7 +58,7 @@ namespace CrackingTheCodingInterview.v5.DataStructures.StacksAndQueues
             public void Push(AnimalType animalType)
             {
                 Node<Animal> tail = tails[animalType];
-                var node = Nodes.Create(Animal.Create(animalType, counter++));
+                var node = Common.DataStructures.LinkedLists.LinkedLists.Create(Animal.Create(animalType, counter++));
                 if (tail == null)
                 {
                     heads[animalType] = node;
