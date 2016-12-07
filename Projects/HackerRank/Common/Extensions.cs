@@ -21,7 +21,12 @@ namespace HackerRank.Common
 
         public static int[] ParseToIntArray(this string line)
         {
-            return line.ParseWithSpace().Select(int.Parse).ToArray();
+            return line.ParseToArray(ToInt);
+        }
+
+        public static T[] ParseToArray<T>(this string line, Func<string, T> convertorFunc)
+        {
+            return line.ParseWithSpace().Select(convertorFunc).ToArray();
         }
 
         public static string[] ToCharacters(this string line)
