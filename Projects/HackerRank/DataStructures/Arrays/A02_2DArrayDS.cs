@@ -6,7 +6,8 @@ namespace HackerRank.DataStructures.Arrays
 {
     //2D Array - DS
     //https://www.hackerrank.com/challenges/2d-array
-    class A02 : IProgram
+    // ReSharper disable once InconsistentNaming
+    class A02_2DArrayDS : IProgram
     {
         public void Run(string[] args)
         {

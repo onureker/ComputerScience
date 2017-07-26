@@ -8,7 +8,10 @@ using Common.DataStructures.Arrays;
 
 namespace HackerRank.DataStructures.Arrays
 {
-    class A04InPlace: IProgram
+    //Left Rotation
+    //https://www.hackerrank.com/challenges/array-left-rotation
+    // ReSharper disable once InconsistentNaming
+    class A04_LeftRotation_InPlace : IProgram
     {
         public void Run(string[] args)
         {

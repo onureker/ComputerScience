@@ -7,7 +7,8 @@ namespace HackerRank.DataStructures.Arrays
 {
     //Dynamic Array
     //https://www.hackerrank.com/challenges/dynamic-array
-    class A03 : IProgram
+    // ReSharper disable once InconsistentNaming
+    class A03_DynamicArray : IProgram
     {
         public void Run(string[] args)
         {

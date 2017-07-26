@@ -10,7 +10,8 @@ namespace HackerRank.DataStructures.Arrays
 {
     //Left Rotation
     //https://www.hackerrank.com/challenges/array-left-rotation
-    class A04NewArray : IProgram
+    // ReSharper disable once InconsistentNaming
+    class A04_LeftRotation_NewArray : IProgram
     {
         public void Run(string[] args)
         {

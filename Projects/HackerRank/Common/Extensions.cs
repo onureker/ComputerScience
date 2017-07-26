@@ -8,6 +8,7 @@ namespace HackerRank.Common
     public static class Extensions
     {
         public static Func<string, int> ToInt = int.Parse;
+        public static Func<string, long> ToLong = long.Parse;
 
         public static IEnumerable<string> ReadLines(this TextReader textReader, int count)
         {
@@ -22,6 +23,11 @@ namespace HackerRank.Common
         public static int[] ParseToIntArray(this string line)
         {
             return line.ParseToArray(ToInt);
+        }
+
+        public static long[] ParseToLongArray(this string line)
+        {
+            return line.ParseToArray(ToLong);
         }
 
         public static T[] ParseToArray<T>(this string line, Func<string, T> convertorFunc)

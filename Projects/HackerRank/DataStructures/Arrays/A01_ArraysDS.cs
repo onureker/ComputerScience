@@ -6,7 +6,8 @@ namespace HackerRank.DataStructures.Arrays
 {
     //Arrays - DS
     //https://www.hackerrank.com/challenges/arrays-ds
-    class A01 : IProgram
+    // ReSharper disable once InconsistentNaming
+    class A01_ArraysDS : IProgram
     {
         public void Run(string[] args)
         {

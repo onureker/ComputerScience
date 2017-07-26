@@ -5,7 +5,10 @@ using Common.DataStructures.Arrays;
 
 namespace HackerRank.DataStructures.Arrays
 {
-    class A05: IProgram
+    //Sparse Arrays
+    //https://www.hackerrank.com/challenges/sparse-arrays
+    // ReSharper disable once InconsistentNaming
+    class A05_SparseArrays : IProgram
     {
         public void Run(string[] args)
         {
